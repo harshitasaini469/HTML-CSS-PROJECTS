@@ -1,0 +1,191 @@
+body {
+    background: url('images/pattern-background-desktop.svg');
+    background-position-y: -120px;
+    background-color: hsl(225, 100%, 94%);
+    max-width: 1440px;
+}
+
+#main {
+    width: 350px;
+    height: 84vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px gray;
+    position: relative;
+    margin: auto auto;
+    margin-top: 5%;
+}
+
+#header-image img {
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#content {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#first-section {
+    margin-top: 24px;
+    text-align: center;
+}
+
+#summary {
+    font-size: 24px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+}
+
+#desc {
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    margin-top: 12px;
+    color: hsl(224, 23%, 55%)
+}
+
+#order-sec {
+    display: flex;
+    flex-direction: row;
+    margin-top: 23px;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 14px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#order-sec img {
+    width: 45px;
+    height: 45px;
+    margin-left: 17px;
+}
+
+#change {
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+#change a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+}
+
+#order-confirmation {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+#order-confirmation:first-child {
+    color: hsl(223, 47%, 23%);
+}
+
+#order-confirmation :last-child {
+    color: hsl(224, 23%, 55%);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+#buttons button:first-child {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    padding: 13px;
+    border: none;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#buttons button:first-child:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px 8px gray;
+}
+
+#buttons button:last-child:hover {
+    cursor: pointer;
+}
+
+#buttons button:last-child {
+    background-color: white;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(213, 5%, 37%);
+    font-weight: 700;
+    margin-top: 12px;
+    padding-bottom: 9px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+    #main {
+        width: 250px;
+        height: 74vh;
+    }
+    #header-image img {
+        width: 250px;
+    }
+    #content {
+        width: 170px;
+    }
+    #summary {
+        font-size: 18px;
+    }
+    #desc {
+        font-size: 11px;
+    }
+    #order-sec {
+        box-sizing: border-box;
+        padding: 0px;
+        width: 170px;
+    }
+    #order-sec img {
+        width: 25px;
+        height: 25px;
+        margin-left: 12px;
+        margin-right: 14px;
+    }
+    #order-confirmation {
+        font-size: 11px;
+    }
+    #change {
+        margin-right: 25px;
+        margin-left: 20px;
+    }
+    #change a {
+        font-size: 12px;
+    }
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 24px;
+    }
+    #buttons button:first-child {
+        padding: 8px;
+        border: none;
+        font-size: 12px;
+    }
+    #buttons button:last-child {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+}
