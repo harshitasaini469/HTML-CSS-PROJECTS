@@ -1,0 +1,216 @@
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    main {
+        margin-top: 5%;
+    }
+    
+    header {
+        margin-left: 80%;
+    }
+    
+    nav {
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin-right: 5%;
+    }
+    
+    .span {
+        color: rgb(0, 0, 0, 0.87);
+        padding: 6px;
+        font-size: 13px;
+        text-decoration: none;
+        position: relative;
+        bottom: -17px;
+        margin-right: 5%;
+    }
+    
+    .span:hover {
+        text-decoration: underline;
+    }
+    
+    #img {
+        border-radius: 100%;
+        width: 48px;
+        height: 48px;
+    }
+    
+    #google {
+        width: 300px;
+    }
+    
+    #search {
+        border-radius: 20px;
+        width: 600px;
+        color: #222;
+        border: 1px solid #dfe1e5;
+        font-size: 13px;
+        padding: 12px;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        border-color: rgba(223, 225, 229, 0);
+    }
+    
+    #search:focus {
+        border: none;
+    }
+    
+    .p:hover {
+        background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+        border: 1px solid #c6c6c6;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        color: #222
+    }
+    
+    .div {
+        display: inline-block;
+        padding: 16px;
+    }
+    
+    .p {
+        background-color: #f2f2f2;
+        margin-top: 24px;
+        margin-right: 6px;
+        color: #5F6368;
+        font-size: 14px;
+        height: 36px;
+        padding: 0 16px;
+        background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+        border: 1px solid transparent;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+        color: #222;
+    }
+    
+    section {
+        text-align: center;
+    }
+    
+    #dropdown-menu {
+        position: relative;
+        bottom: -16px;
+        margin-right: 16px;
+    }
+    
+    #input-wrapper {
+        position: relative;
+    }
+    
+    #input-wrapper>img {
+        position: absolute;
+        right: auto;
+        top: 2px;
+        width: 28px;
+        padding: 5px;
+    }
+    
+    #app-dropdown {
+        width: 285px;
+        padding: 28px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+        position: absolute;
+        right: 100px;
+        margin-top: 12px;
+    }
+    
+    .app-item {
+        display: inline-block;
+        width: 80px;
+        padding: 2px;
+        text-align: center;
+    }
+    
+    .app-item>img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .app-item>p {
+        color: rgba(0, 0, 0, 0.87);
+        margin: 0px;
+        padding-top: 8px;
+    }
+    
+    .app-item:hover {
+        border: 1px solid rgba(0, 0, 0, 0.2)
+    }
+    
+    #dropdown-wrapper {
+        display: inline-block;
+        margin-right: 2%;
+    }
+    
+    #dropdown-wrapper:hover #app-dropdown {
+        display: block;
+    }
+    
+    @media screen and (max-width: 668px) {
+        body {
+            width: 100%;
+        }
+        header {
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+        nav {
+            text-align: center;
+        }
+        main {
+            margin-top: 45%;
+        }
+        #google {
+            width: 150px;
+        }
+        #search {
+            width: 320px;
+            font-size: 9px;
+        }
+        .div {
+            display: flex;
+            flex-direction: column;
+            padding: 14px;
+            width: max-content;
+            margin: auto;
+        }
+        .p {
+            font-size: 16px;
+            height: 36px;
+            padding: 0 16px;
+        }
+        #input-wrapper>img {
+            position: absolute;
+            left: auto;
+            bottom: auto;
+            width: 25px;
+        }
+        #app-dropdown {
+            width: 200px;
+            padding: 15px;
+        }
+        .app-item>p {
+            color: rgba(0, 0, 0, 0.87);
+            margin: 0px;
+            padding-top: 8px;
+            text-align: center;
+        }
+        .app-item {
+            display: inline-block;
+            width: 30px;
+            padding: 15px;
+            text-align: center;
+        }
+        .app-item>img {
+            width: 35px;
+            height: 35px;
+        }
+        #dropdown-wrapper:hover #app-dropdown {
+            display: block;
+            margin-bottom: 45px;
+        }
+    }
