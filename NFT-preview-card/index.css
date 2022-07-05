@@ -1,0 +1,209 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    max-width: 1440px;
+}
+
+main {
+    width: 300px;
+    height: 80vh;
+    border-radius: 12px;
+    background-color: hsl(216, 50%, 16%);
+    bottom: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 5px 10px black;
+}
+
+#equillibrium-img {
+    width: 250px;
+    border-radius: 12px;
+    position: relative;
+    top: 25px;
+}
+
+#icon-view:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#icon-view {
+    width: 250px;
+    height: 250px;
+    background-color: cyan;
+    opacity: 0.5;
+    border-radius: 12px;
+    transform: translateY(-92%);
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
+
+#icon-view svg {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: relative;
+}
+
+#fig-text {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    margin-top: 10%;
+    position: relative;
+    transform: translateX(-26%);
+}
+
+#fig-text:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+#fig-description {
+    width: 250px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#third-section {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ethereum-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+#ethereum-section p {
+    color: cyan;
+    font-size: 14px;
+    margin-left: 12px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#eth-img {
+    width: 11px;
+    height: 18px;
+    position: relative;
+}
+
+#clock-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#clock-section img {
+    width: 17px;
+    height: 17px;
+}
+
+#clock-section p {
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#line {
+    background-color: hsl(215, 32%, 27%);
+    width: 250px;
+    height: 0.1px;
+}
+
+#id-section {
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    margin-top: 14px;
+}
+
+#id-section img {
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#id-section p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+}
+
+#id-section p:first-of-type {
+    color: hsl(215, 51%, 70%);
+    margin-left: 12px;
+}
+
+#id-section p:last-of-type {
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px;
+}
+
+#id-section p:last-of-type:hover {
+    color: cyan;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        width: 250px;
+        height: 450px;
+    }
+    #equillibrium-img {
+        width: 200px;
+    }
+    #icon-view {
+        width: 200px;
+        transform: translateY(-90%);
+    }
+    #icon-view:hover {
+        height: 200px;
+    }
+    #fig-text {
+        font-size: 14px;
+    }
+    #fig-description {
+        width: 200px;
+        font-size: 12px;
+    }
+    #third-section {
+        width: 200px;
+    }
+    #ethereum-section p {
+        font-size: 12px;
+    }
+    #clock-section p {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+    #line {
+        width: 200px;
+    }
+    #id-section {
+        width: 200px;
+        margin-top: 14px;
+    }
+    #id-section img {
+        width: 30px;
+        height: 30px;
+    }
+    #id-section p {
+        font-size: 12px;
+    }
+}
